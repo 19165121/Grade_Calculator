@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign Up - Oxford Brookes University Grade Calculator</title>
+    <style>
+      @import url(signup.css);
+    </style>
+  </head>
+  <body>
+    <div id="logo">
+      <span id="oxford">Oxford</span><br>
+      <span id="brookes">Brookes</span><br>
+      <span id="university">University</span><br>
+      <span id="grade-calculator" style="color: rgba(70, 206, 63); font-size: 20px; font-family:Arial, Helvetica, sans-serif"; >Grade Calculator</span>
+    </div>
+    
+    <form name="signup-form" method="POST" action="signup.php" onsubmit="return validateForm()">
+      <h2>Sign Up</h2>
+      <label for="student-name">Name:</label>
+      <input type="text" placeholder="Enter Name" id="student-name" name="name" required>
+      <label for="student-id">Student ID:</label>
+      <input type="text" placeholder="Enter Student ID" id="student-id" name="student_id" required>
+      <label for="password">Password:</label>
+      <input type="password" placeholder="Enter Password" id="password" name="password" required>
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" placeholder="Re-enter Password" id="confirm-password" name="confirm_password" required>
+      <button type="submit">Sign up</button>
+      <p>Already registered? <a href="login.html">Log in</a></p>
+    </form>
+    
+  <script src="signup.js"></script>
+  </body>
+</html>

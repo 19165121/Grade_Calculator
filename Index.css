@@ -1,0 +1,92 @@
+body {
+    background-color: black;
+    background-image: url("1.JPG");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.container{
+    position:relative;
+    top: 30px;
+}
+
+#logo {
+    text-align: center;
+    margin-bottom:0px;
+}
+
+#oxford,
+#university {
+    text-align: center;
+    font-family: Arial;
+    font-size: 33.75px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    
+    
+    animation: fade-in 10s ease-out;
+    line-height: 0.5;
+    word-spacing: 1px;
+    letter-spacing: 8px;
+}
+
+#brookes {
+    text-align: center;
+    font-family: "STIX Two Math", serif;
+    font-size: 75px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    animation: fade-in 10s ease-out;
+
+    
+}
+
+.buttons {
+    position:absolute;
+    right: 638px;
+    top: 300px;
+    display: flex;
+    animation-delay: 3000ms;
+    
+}
+
+.button {
+    background-color: green;
+    color: white;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1em;
+    font-family: Arial;
+    margin-left: 20px;
+    cursor: pointer;
+    /* Transizione per il bottone */
+    transition: background-color 5s ease-out;
+}
+
+.button:hover {
+    background-color: rgb(30, 120, 30);
+}
+
+/* Animazione per la scritta */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 5;
+    }
+}
+
+/* Animazione per la scritta */
+@keyframes zoom-in {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

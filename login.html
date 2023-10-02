@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login - Oxford Brookes University Grade Calculator</title>
+    <style>
+    @import url(login.css);
+  </style>
+  </head>
+  <body>
+    <div id="logo">
+      <span id="oxford">Oxford</span><br>
+      <span id="brookes">Brookes</span><br>
+      <span id="university">University</span><br>
+      <span id="grade-calculator" style="color: rgba(70, 206, 63); font-size: 20px; font-family:Arial, Helvetica, sans-serif"; >Grade Calculator</span>
+    </div>
+    
+    <form method="post" action="login.php">
+      <h2>Login</h2>
+      <label for="student-id">Student ID:</label>
+      <input type="text" placeholder="Enter Student ID" id="student-id" name="student-id" required>
+    
+      <label for="password">Password:</label>
+      <input type="password" placeholder="Enter Password" id="password" name="password" required>
+    
+      <button type="submit">Sign In</button>
+      
+      <p>Not registered yet? <a href="signup.html">Click here</a></p>
+    </form>
+    
+  </body>
+</html>

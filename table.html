@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    
+    <style>
+@import url(table.css);
+</style>
+
+
+<title>Table - Oxford Brookes University Grade Calculator</title>
+  </head>
+  <body>
+    
+    
+    <table>
+      <thead>
+        <tr>
+          <th>SELECT<br> COURSES<br></th>
+          <th style="border: 300px">COURSE CODE</th>
+          <th>COURSE NAME</th>
+          <th>CREDITS</th>
+          <th>MARKS</th>
+        </tr>
+
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" onchange="toggleFields(this)"></td>
+          <td>COMP7001</td>
+          <td>Object-Oriented Programming</td>
+            
+              <td><input type="text" id="a" name="a" style="display:none; background-color:rgb(211, 243, 209, 0.533) ;"oninput="updateColorsACEMO(this);"></td>
+              <td><input type="text" id="b" name="b" style="display:none; background-color: rgb(211, 243, 209, 0.533);"oninput="updateColor(this);;"></td> 
+          </tr>
+
+         <tr>
+          <td><input type="checkbox" onchange="toggleFields(this)"></td>
+          <td>COMP7002</td>
+          <td>Modern Computer Systems</td>
+            
+              <td><input type="text" id="c" name="c" style="display:none; background-color:rgb(211, 243, 209, 0.533) ;"oninput="updateColorsACEMO(this);"></td>
+              <td><input type="text" id="d" name="d" style="display:none; background-color: rgb(211, 243, 209, 0.533);"oninput="updateColor(this);;"></td> 
+          </tr>
+
+            <tr>
+          <td><input type="checkbox" onchange="toggleFields(this)"></td>
+          <td>TECH7005</td>
+          <td>Research, Scholarship and Professional Skills</td>
+            
+              <td><input type="text" id="e" name="e" style="display:none; background-color:rgb(211, 243, 209, 0.533) ;"oninput="updateColorsACEMO(this);"></td>
+              <td><input type="text" id="f" name="f" style="display:none; background-color: rgb(211, 243, 209, 0.533);"oninput="updateColor(this);;"></td> 
+          </tr>
+          
+          <tr>
+            <td><input type="checkbox" onchange="toggleFields(this)"></td>
+            <td>DALT7002</td>
+            <td>Data Science Foundations</td>
+              
+                <td><input type="text" id="g" name="g" style="display:none; background-color:rgb(211, 243, 209, 0.533) ;"oninput="updateColorsTen(this);"></td>
+                <td><input type="text" id="h" name="h" style="display:none; background-color: rgb(211, 243, 209, 0.533);"oninput="updateColor(this);;"></td> 
+            </tr>
+            
+            <tr>
+              <td><input type="checkbox" onchange="toggleFields(this)"></td>
+              <td>DALT7011</td>
+              <td>Introduction to Machine Learning</td>
+                
+                  <td><input type="text" id="i" name="i" style="display:none; background-color:rgb(211, 243, 209, 0.533) ;"oninput="updateColorsTen(this);"></td>
+                  <td><input type="text" id="l" name="l" style="display:none; background-color: rgb(211, 243, 209, 0.533);"oninput="updateColor(this);;"></td> 
+              </tr>
+              
+              <tr>
+                <td><input type="checkbox" onchange="toggleFields(this)"></td>
+                <td>SOFT7003</td>
+                <td>Advanced Software Development</td>
+                  
+                    <td><input type="text" id="m" name="m" style="display:none; background-color:rgb(211, 243, 209, 0.533) ;"oninput="updateColorsACEMO(this);"></td>
+                    <td><input type="text" id="n" name="n"style="display:none; background-color: rgb(211, 243, 209, 0.533);"oninput="updateColor(this);;"></td> 
+                </tr>
+                
+                <tr>
+                  <td><input type="checkbox" onchange="toggleFields(this)"></td>
+                  <td>TECH7004</td>
+                  <td>Cyber Security and the Web</td>
+                    
+                      <td><input type="text" id="o" name="o" style="display:none; background-color:rgb(211, 243, 209, 0.533) ;"oninput="updateColorsACEMO(this);"></td>
+                      <td><input type="text" id="p" name="p" style="display:none; background-color: rgb(211, 243, 209, 0.533);"oninput="updateColor(this);;"></td> 
+                  </tr>
+                  
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" onchange="toggleFields(this)"></td>
+            <td>TECH7009</td>
+            <td>MSc Dissertation in Computing Subjects</td>
+             
+                <td><input type="text" id="q" name="q" style="display:none; background-color:rgb(211, 243, 209, 0.533) ;"oninput="updateColorsSix(this);"></td>
+                <td><input type="text" id="r" name="r" style="display:none; background-color: rgb(211, 243, 209, 0.533);"oninput="updateColor(this);;"></td> 
+            </tr>
+            
+      </tbody>
+    </table>
+
+
+    <script
+     src="table.js">
+    </script>
+
+
+	<em>Grade Calculator ver. 1.0</em>
+	<div class="container">
+		<div id="logo">
+			<span id="oxford">Oxford</span><br>
+			<span id="brookes">Brookes</span><br>
+			<span id="university">University</span><br>
+			<span id="Grade Calculator" style="color: rgb(38, 113, 6); font-size: 20px; font-family:Arial, Helvetica, sans-serif"; >Grade Calculator</span>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+      <button onclick="submitValues()" style="font-size: 30px;background-color: green;
+			color: white;
+      text-align: center;
+			padding: 20px 60px;
+			border: none;
+			border-radius: 15px;
+			font-size: 1em;
+			font-family: Arial;
+			margin-left: 20px;
+      margin-top: 280px;
+			cursor: pointer;">SUBMIT</button>
+      </div>
+      
+    </body>
+</html>

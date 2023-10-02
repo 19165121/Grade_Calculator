@@ -1,0 +1,85 @@
+body {
+    background-image: url("4b.jpg");
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* Logo styles */
+  #logo {
+    text-align: center;
+    margin-top: 50px;
+  }
+  #oxford,
+  #university {
+    font-family: Arial;
+    font-size: 33.75px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    animation: fade-in 10s ease-out;
+    line-height: 0.5;
+    word-spacing: 1px;
+    letter-spacing: 8px;
+  }
+  #brookes {
+    text-align: center;
+    font-family: "STIX Two Math", serif;
+    font-size: 75px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    animation: fade-in 10s ease-out;
+  }
+
+  /* Form styles */
+  form {
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    max-width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(59, 143, 42, 2);
+    background-color: rgba(200, 235, 190, 0.4);
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 254);
+  }
+  button {
+    background-color: #1dc022;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  h1 {
+    background-color: black;
+    color: green;
+    text-align: center;
+    margin-top: 20%;
+  }
